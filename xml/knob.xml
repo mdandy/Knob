@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This is a sample of config XML -->
+
+<knobs jarName="test.jar">
+    <knob>
+        <name>input</name>
+        <shortcode>i</shortcode>
+        <type>FILE</type>
+        <required>true</required>
+        <doc>Specify the input file.</doc>
+    </knob>
+    <knob>
+        <name>data_type</name>
+        <shortcode>dt</shortcode>
+        <type>LIST</type>
+        <list>
+            <enum>VAR</enum>
+            <enum>INT</enum>
+            <enum>FLOAT</enum>
+        </list>
+        <required>false</required>
+        <default>VAR</default>
+        <doc>The datatype to be queried.</doc>
+    </knob>
+    <knob>
+        <name>outputName</name>
+        <shortcode>o</shortcode>
+        <type>STRING</type>
+        <required>true</required>
+        <default>out.txt</default>
+        <doc>Output filename.</doc>
+    </knob>
+    <knob>
+        <name>numThread</name>
+        <shortcode>t</shortcode>
+        <type>NUMBER</type>
+        <required>false</required>
+        <default>1</default>
+    </knob>
+    <knob>
+        <name>help</name>
+        <shortcode>h</shortcode>
+        <type>BOOLEAN</type>
+        <required>false</required>
+        <default>true</default>
+        <doc>Print this manual.</doc>
+    </knob>
+</knobs>
